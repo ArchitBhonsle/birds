@@ -6,8 +6,8 @@ _This is just a hobby project to give myself an excuse to explore combinatory lo
 
 ## Combinators
 
-- [ ] Bluebird
-- [ ] Blackbird
+- [x] Bluebird
+- [x] Blackbird
 - [ ] Bunting
 - [ ] Becard
 - [ ] Cardinal
@@ -56,8 +56,6 @@ _This is just a hobby project to give myself an excuse to explore combinatory lo
 - [ ] Konstant Mocker
 - [ ] Crossed Konstant Mocker
 - [ ] Theta
-
-(I'm referring to Haskell's `data.aviary.birds`)
 
 ## Credits
 
