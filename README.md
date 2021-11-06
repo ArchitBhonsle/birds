@@ -13,9 +13,9 @@ _This is just a hobby project to give myself an excuse to explore combinatory lo
 - [x] Dove
 - [x] Eagle
 - [x] Finch
-- [ ] Goldfinch
-- [ ] Hummingbird
-- [ ] Identity Bird
+- [x] Goldfinch
+- [x] Hummingbird
+- [x] Identity Bird
 - [ ] Jay
 - [ ] Kestrel (True)
 - [ ] Lark

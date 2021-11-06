@@ -40,3 +40,26 @@ where
 {
     z(y, x)
 }
+
+/// G combinator: Gxyzw = xw(yz)
+pub fn goldfinch<A, B, X, Y, Z, W>(x: X, y: Y, z: Z, w: W) -> A
+where
+    X: Fn(W, B) -> A,
+    Y: Fn(Z) -> B,
+{
+    x(w, y(z))
+}
+
+/// H combinator: Hxyz = xyzy
+pub fn hummingbird<A, X, Y, Z>(x: X, y: Y, z: Z) -> A
+where
+    X: Fn(Y, Z, Y) -> A,
+    Y: Clone, // TODO taking references at parameters seems better
+{
+    x(y.clone(), z, y)
+}
+
+/// I combinator: Ix = x
+pub fn identity_bird<X>(x: X) -> X {
+    x
+}
