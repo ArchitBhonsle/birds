@@ -17,7 +17,7 @@ _This is just a hobby project to give myself an excuse to explore combinatory lo
 - [x] Hummingbird
 - [x] Identity Bird
 - [ ] Jay
-- [ ] Kestrel (True)
+- [ ] Kestrel
 - [ ] Lark
 - [ ] Mockingbird
 - [ ] Owl

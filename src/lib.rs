@@ -63,3 +63,11 @@ where
 pub fn identity_bird<X>(x: X) -> X {
     x
 }
+
+/// J combinator: Jxyzw = xy(xwz)
+pub fn jay<X, Y, Z>(x: X, y: Y, z: Z, w: Y) -> Z
+where
+    X: Fn(Y, Z) -> Z,
+{
+    x(y, x(w, z))
+}
