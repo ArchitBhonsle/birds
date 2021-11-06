@@ -1,63 +1,34 @@
-# BIRDS
+# birds
 
 Combinators implemented in Rust named after Raymond Smullyan's birds.
 
-Lambda calculus and Haskell use single argument functions that return another function to "simulate" multiple arguments. Implementing such ideas in Rust can quickly get annoying in Rust both due to the `()` syntax used to invoke functions and the need to `Box` our closures. Therefore I've simply used multiple arguments in such cases. (If you have any better ideas please file an [issue](https://github.com/ArchitBhonsle/birds/issues) detailing your idea.
+Lambda calculus and Haskell use single argument functions that return another function to "simulate" multiple arguments. Implementing such ideas in Rust can quickly get annoying in Rust both due to the `()` syntax used to invoke functions and the need to `Box` our closures. Therefore I've simply used multiple arguments in such cases. (If you have any better ideas please file an [issue](https://github.com/ArchitBhonsle/birds/issues) detailing your idea)
 
 _This is just a hobby project to give myself an excuse to explore combinatory logic and Rust generics._
 
 ## Combinators
 
 - [x] Bluebird
-- [ ] Blackbird
-- [ ] Bunting
-- [ ] Becard
 - [x] Cardinal
-- [ ] Dove
-- [ ] Dickcissel
-- [ ] Dovekies
-- [ ] Eagle
-- [ ] Bald Eagle
-- [ ] Finch
+- [x] Dove
+- [x] Eagle
+- [x] Finch
 - [ ] Goldfinch
 - [ ] Hummingbird
-- [ ] Identity Bird (aka Idiot)
+- [ ] Identity Bird
 - [ ] Jay
 - [ ] Kestrel (True)
 - [ ] Lark
 - [ ] Mockingbird
-- [ ] Double Mockingbird
 - [ ] Owl
 - [ ] Queer Bird
 - [ ] Quixotic Bird
-- [ ] Quizzical Bird
 - [ ] Quirky Bird
-- [ ] Quacky Bird
 - [ ] Robin
+- [ ] Sage bird
 - [ ] Starling
 - [ ] Thrush
-- [ ] Turing
-- [ ] Vireo (aka Pairing)
-- [ ] Warbler
-- [ ] Converse Warbler
-- [ ] Why Bird (aka Sage Bird)
-- [ ] Identity Bird Once Removed
-- [ ] Warbler Once Removed
-- [ ] Cardinal Once Removed
-- [ ] Robin Once Removed
-- [ ] Finch Once Removed
-- [ ] Vireo Once Removed
-- [ ] Identity Bird Twice Removed
-- [ ] Warbler Twice Removed
-- [ ] Cardinal Twice Removed
-- [ ] Robin Twice Removed
-- [ ] Finch Twice Removed
-- [ ] Vireo Twice Removed
-- [ ] Kite (False)
-- [ ] Omega
-- [ ] Konstant Mocker
-- [ ] Crossed Konstant Mocker
-- [ ] Theta
+- [ ] Turing bird
 
 ## Credits
 
