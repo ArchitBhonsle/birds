@@ -21,14 +21,14 @@ Lambda calculus and Haskell use single argument functions that return another fu
 - [x] Lark
 - [x] Mockingbird
 - [x] Owl
-- [ ] Queer Bird
-- [ ] Quixotic Bird
-- [ ] Quirky Bird
+- [x] Queer Bird
+- [x] Quixotic Bird
+- [x] Quirky Bird
 - [x] Robin
 - [x] Sage bird
-- [ ] Starling
-- [ ] Thrush
-- [ ] Turing bird
+- [x] Starling
+- [x] Thrush
+- [x] Turing bird
 
 ## Credits
 

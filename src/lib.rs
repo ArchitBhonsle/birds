@@ -145,3 +145,30 @@ where
 {
     x(sage(x.clone()))
 }
+
+/// S combinator: Sxyz = xz(yz)
+pub fn starling<A, B, X, Y, Z>(x: X, y: Y, z: Z) -> A
+where
+    X: Fn(Z, B) -> A,
+    Y: Fn(Z) -> B,
+    Z: Clone,
+{
+    x(z.clone(), y(z))
+}
+
+/// T combinator: Txy = yx
+pub fn thrush<A, X, Y>(x: X, y: Y) -> A
+where
+    Y: Fn(X) -> A,
+{
+    y(x)
+}
+
+/// U combinator: Uxy = y(xxy)
+pub fn turing<A, B, X, Y>(x: X, y: Y) -> A
+where
+    X: Fn(X, Y) -> B + Clone,
+    Y: Fn(B) -> A + Clone,
+{
+    y(x(x.clone(), y.clone()))
+}
