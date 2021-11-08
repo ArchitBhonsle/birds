@@ -2,9 +2,9 @@
 
 Combinators implemented in Rust named after Raymond Smullyan's birds.
 
-Lambda calculus and Haskell use single argument functions that return another function to "simulate" multiple arguments. Implementing such ideas in Rust can quickly get annoying in Rust both due to the `()` syntax used to invoke functions and the need to `Box` our closures. Therefore I've simply used multiple arguments in such cases. (If you have any better ideas please file an [issue](https://github.com/ArchitBhonsle/birds/issues) detailing your idea)
-
 _This is just a hobby project to give myself an excuse to explore combinatory logic and Rust generics._
+
+Lambda calculus and Haskell use single argument functions that return another function to "simulate" multiple arguments. Implementing such ideas in Rust can quickly get annoying in Rust both due to the `()` syntax used to invoke functions and the need to `Box` our closures. Therefore I've simply used multiple arguments in such cases. (If you have any better ideas please file an [issue](https://github.com/ArchitBhonsle/birds/issues) detailing your idea)
 
 ## Combinators
 
@@ -20,12 +20,12 @@ _This is just a hobby project to give myself an excuse to explore combinatory lo
 - [x] Kestrel
 - [x] Lark
 - [x] Mockingbird
-- [ ] Owl
+- [x] Owl
 - [ ] Queer Bird
 - [ ] Quixotic Bird
 - [ ] Quirky Bird
-- [ ] Robin
-- [ ] Sage bird
+- [x] Robin
+- [x] Sage bird
 - [ ] Starling
 - [ ] Thrush
 - [ ] Turing bird

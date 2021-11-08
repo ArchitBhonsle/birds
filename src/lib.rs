@@ -93,3 +93,28 @@ where
 {
     x(x.clone())
 }
+
+/// O combinator: Oxy = y(xy)
+pub fn owl<A, B, X, Y>(x: X, y: Y) -> A
+where
+    X: Fn(Y) -> B,
+    Y: Fn(B) -> A + Clone,
+{
+    y(x(y.clone()))
+}
+
+/// R combinator: Rxyz = yzx
+pub fn robin<A, X, Y, Z>(x: X, y: Y, z: Z) -> A
+where
+    Y: Fn(Z, X) -> A,
+{
+    y(z, x)
+}
+
+/// ϴ combinator: ϴx = x(ϴx)
+pub fn sage_bird<A, X>(x: X) -> A
+where
+    X: Fn(A) -> A + Clone,
+{
+    x(sage_bird(x.clone()))
+}
