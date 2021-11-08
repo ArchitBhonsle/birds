@@ -71,3 +71,25 @@ where
 {
     x(y, x(w, z))
 }
+
+/// K combinator: Kxy = x
+pub fn kestrel<X, Y>(x: X, _y: Y) -> X {
+    x
+}
+
+/// L combinator: Lxy = Lx(yy)
+pub fn lark<A, B, X, Y>(x: X, y: Y) -> A
+where
+    X: Fn(B) -> A,
+    Y: Fn(Y) -> B + Clone,
+{
+    x(y(y.clone()))
+}
+
+/// M combinator: Mx = xx
+pub fn mockingbird<A, X>(x: X) -> A
+where
+    X: Fn(X) -> A + Clone,
+{
+    x(x.clone())
+}

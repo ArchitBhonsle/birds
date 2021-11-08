@@ -16,10 +16,10 @@ _This is just a hobby project to give myself an excuse to explore combinatory lo
 - [x] Goldfinch
 - [x] Hummingbird
 - [x] Identity Bird
-- [ ] Jay
-- [ ] Kestrel
-- [ ] Lark
-- [ ] Mockingbird
+- [x] Jay
+- [x] Kestrel
+- [x] Lark
+- [x] Mockingbird
 - [ ] Owl
 - [ ] Queer Bird
 - [ ] Quixotic Bird
