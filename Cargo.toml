@@ -1,12 +1,12 @@
 [package]
 authors = ["Archit Bhonsle <abhonsle2000@gmail.com>"]
 description = "Combinators using Rust macros"
-edition = "2018"
+edition = "2021"
 keywords=["combinators", "macros"]
 license="MIT"
 name = "birds"
 readme="README.md"
 repository="https://github.com/ArchitBhonsle/birds"
-version = "0.1.0"
+version = "0.2.0"
 
 [dependencies]
