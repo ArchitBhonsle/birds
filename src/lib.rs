@@ -103,6 +103,33 @@ where
     y(x(y.clone()))
 }
 
+/// Q combinator: Qxyz = y(xz)
+pub fn queer<A, B, X, Y, Z>(x: X, y: Y, z: Z) -> A
+where
+    X: Fn(Z) -> B,
+    Y: Fn(B) -> A,
+{
+    y(x(z))
+}
+
+/// Q1 combinator: Q1xyz = x(zy)
+pub fn quixotic<A, B, X, Y, Z>(x: X, y: Y, z: Z) -> A
+where
+    X: Fn(B) -> A,
+    Z: Fn(Y) -> B,
+{
+    x(z(y))
+}
+
+/// Q3 combinator: Q3xyz = z(xy)
+pub fn quirky<A, B, X, Y, Z>(x: X, y: Y, z: Z) -> A
+where
+    X: Fn(Y) -> B,
+    Z: Fn(B) -> A,
+{
+    z(x(y))
+}
+
 /// R combinator: Rxyz = yzx
 pub fn robin<A, X, Y, Z>(x: X, y: Y, z: Z) -> A
 where
@@ -112,9 +139,9 @@ where
 }
 
 /// ϴ combinator: ϴx = x(ϴx)
-pub fn sage_bird<A, X>(x: X) -> A
+pub fn sage<A, X>(x: X) -> A
 where
     X: Fn(A) -> A + Clone,
 {
-    x(sage_bird(x.clone()))
+    x(sage(x.clone()))
 }
